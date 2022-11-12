@@ -1,53 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="main.js" defer></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <div>
-      <h2 class="text">
-        Hola! Mi nombre es <span id="name"></span>, tengo
-        <span id="age"></span> años y <span id="likesMusic"></span>. Este es mi
-        primer proyecto con Javascript
-      </h2>
-      <h3>"La música expresa lo que no puede ser dicho y aquello sobre lo que es imposible permanecer en silencio" - Victor Hugo</h3>
-      <h4 class="text">
-       <!-- Según Ageify, tengo <span id="guessedAge"></span> años, esto es
-        <span id="isGuessRight"></span>-->
-      </h4>
-    </div>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PROYECTOS</title>
+    <link rel="stylesheet" href="styleMain.css">
 
-    <div class="piano">
-      <div data-note="C" class="key white" > <p style="color:rgb(22, 21, 21); text-align:center">DO</p>     </div>
-      <div data-note="Db" class="key black"> <p style="color:rgb(245, 240, 240); text-align:center">DO#</p> </div>
-      <div data-note="D" class="key white">  <p style="color:rgb(22, 21, 21); text-align:center">RE</p>     </div>
-      <div data-note="Eb" class="key black"> <p style="color:rgb(245, 240, 240); text-align:center">RE#</p> </div>
-      <div data-note="E" class="key white">  <p style="color:rgb(22, 21, 21); text-align:center">MI</p>     </div>
-      <div data-note="F" class="key white">  <p style="color:rgb(22, 21, 21); text-align:center">FA</p>     </div>
-      <div data-note="Gb" class="key black"> <p style="color:rgb(245, 240, 240); text-align:center">FA#</p> </div>
-      <div data-note="G" class="key white">  <p style="color:rgb(22, 21, 21); text-align:center">SOL</p>    </div>
-      <div data-note="Ab" class="key black"> <p style="color:rgb(245, 240, 240); text-align:center">SOL#</p></div>
-      <div data-note="A" class="key white">  <p style="color:rgb(22, 21, 21); text-align:center">LA</p>     </div>
-      <div data-note="Bb" class="key black"> <p style="color:rgb(245, 240, 240); text-align:center">LA#</p> </div>
-      <div data-note="B" class="key white">  <p style="color:rgb(22, 21, 21); text-align:center">SI</p>     </div>
-    </div>
+    <script>
+        function myFunction() {
+            const navigationBar = document.getElementById("navigation-bar");
+            if (navigationBar.className === "navigation-bar") {
+                navigationBar.className += " responsive";
+            } else {
+                navigationBar.className = "navigation-bar";
+            }
+        }
+    </script> 
+</head>
+<body>
+<header id="header">
+    <h1> MIS PRIMEROS PROYECTOS DE PROGRAMACIÓN </h1>
+    <h2>BIENVENIDO </h2>
+    <!--<video width="1000" height="400" autoplay muted controls>
+        <source src="Video 1.mp4" type="video/mp4">
+        <source src="Video 1.mp4" type="video/ogg">
+        Tu navegador no es compatible
+    </video>-->
+    <h2>“Si se puede imaginar, se puede programar”.</h2>
+    <img src="2.gif" alt="BTS" width="1000" height="400">
+</header>
 
-    <audio id="C" src="notes/C.mp3"></audio>
-    <audio id="Db" src="notes/Db.mp3"></audio>
-    <audio id="D" src="notes/D.mp3"></audio>
-    <audio id="Eb" src="notes/Eb.mp3"></audio>
-    <audio id="E" src="notes/E.mp3"></audio>
-    <audio id="F" src="notes/F.mp3"></audio>
-    <audio id="Gb" src="notes/Gb.mp3"></audio>
-    <audio id="G" src="notes/G.mp3"></audio>
-    <audio id="Ab" src="notes/Ab.mp3"></audio>
-    <audio id="A" src="notes/A.mp3"></audio>
-    <audio id="Bb" src="notes/Bb.mp3"></audio>
-    <audio id="B" src="notes/B.mp3"></audio>
-  </body>
+<br>
+<br>
+<nav id="navigation-bar" class="navigation-bar">
+    <ul>
+        <li><a class="active" href="1-PAGINA DE INICIO.html" target="_blank">PAGINA TRIBUTO</a></li>
+        <li><a class="active" href="piano.html" target="_blank">PIANO</a></li>
+        <li><a class="active" href="#">MUCHAS GRACIAS POR VISITAR MI PÁGINA</a></li>
+        <li class="menu__hamburger-icon">
+            <a href="javascript:void(0);" onclick="myFunction()">
+                <i class="lni lni-menu"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+
+        </ul>
+    </div>
+</footer>
+</body>
 </html>
